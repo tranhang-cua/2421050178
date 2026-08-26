@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>bai 4</title>
+    </head>
+    <body>
+        <h1>Form tạo thông tin</h1>
+        <form>
+            <!-- input nếu không truyền type thì type mặc định sẽ là text -->
+             <div>
+                <p><b>Họ và tên</b></p>
+                 <input type="text" name="hoVaTen">
+             </div>
+             <div>
+                <p><b>Giới thiệu</b></p>
+                <textarea name="gioiThieu"></textarea>
+             </div>
+             <div>
+                <p><b>email</b></p>
+                <input type="email" name="email">
+             </div>
+             <div>
+                <p><b>Số điện thoại</b></p>
+                <input name="soDienThoai"
+                type="tel"
+                placeholder="Dạng số 123"
+                required
+                pattern="([0] {1} ([9,3,6,8] {1}) ([0-9] {8}))">
+             </div>
+             <div>
+                <p><b>Giới tính</b></p>
+                <input type="radio" name="gioiTinh" value="nam">Nam<br>
+                <input type="radio" name="gioiTinh" value="nu">Nữ 
+             </div>
+             <div>
+                <p><b>Sở thích</b></p>
+                Game: <input type="checkbox" name="soThich" value="game"><br>
+                Music: <input type="checkbox" name="soThich" value="music"><br>
+                Sport: <input type="checkbox" name="soThich" value="sport">
+             </div>
+             <div>
+                <p><b>Trình duyệt web hay sử dụng</b></p>
+                <input list="browsers">
+                <datalist id="browsers">
+                   <option value="Internet Explorer">
+                   <option value="Firefox">
+                   <option value="Chrome">
+                   <option value="opera">
+                   <option value="safari">
+                   <option value="cốc cốc">
+                </datalist>
+                <select name="browsers">
+                   <option value="Internet Explorer">Internet Explorer</option>
+                   <option value="Firefox">Firefox</option>
+                   <option value="Chrome">Chrome</option>
+                   <option value="opera">Opera</option>
+                   <option value="safari">Safari</option>
+                   <option value="cốc cốc">Cốc Cốc</option>
+                </select>
+             </div>
+             <div>
+                0 <input type="range" id="a" value="50"> 100
+             </div>
+             <div>
+                <input type="submit">
+                <button>click</button>
+                <input type="reset">
+             </div>
+             <iframe width="560"
+              height="315"
+              src="https://www.youtube.com/embed/itZTG-4HDs0?si=1SAOkpnRWijRhLnB"
+               title="YouTube video player" 
+               frameborder="0" 
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+               referrerpolicy="strict-origin-when-cross-origin" 
+               allowfullscreen></iframe>
+        </form>
+
+        <MARQUEE>
+            <img src="/anh/Ảnh chụp màn hình 2026-08-16 090659.png">
+        </MARQUEE>
+
+        <audio controls>
+            <source src="/anh/nhac1.mp3"> 
+        </audio>
+
+        <video controls>
+            <source src="/anh/vd1.mp4">
+        </video>
+
+        Ví dụ thẻ h1
+    </body>
+</html>
