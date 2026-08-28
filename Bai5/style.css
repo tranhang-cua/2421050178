@@ -1,0 +1,15 @@
+h3 {
+    color:green;
+}
+
+#Tieude{
+    color:pink;
+}
+.Tieude{
+    /* background-color dùng để quy định màu nền */
+    background-color: black;
+}
+
+h3.Tieude2{
+    background:orange;
+}
