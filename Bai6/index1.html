@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đào tạo</title>
+    <style>
+        .danh-muc{
+            background-color: #198cf0;
+        }
+        body{
+            margin: 0;
+        }
+        .danh-sach-muc{
+            margin: 0;
+            padding: 0;
+            /* bỏ dấu chấm ở danh sách khi dùng ul,ui */
+            list-style: none;
+            background-color:#198cf0;
+            display:flex;
+
+            /* gap khoảng cách các đối tượng ở trong */
+            gap:20px;
+        }
+        .lien-ket{
+            color:white;
+            /* text-decoration:bỏ gạch chân thẻ a */
+            text-decoration: none;
+        }
+        .muc{
+            padding: 10px;
+        }
+        main{
+            display:flex;
+        }
+        .Trai{
+            width: 20%;
+            height: 100vh;
+            border-right:1px solid #198cf0;
+        }
+        .Phai{
+            width: 80%;
+            height: 100vh;
+        }
+        .khoi-dang-nhap{
+            width: 100%;
+            height: 100px;
+
+        }
+        form{
+            background-color:antiquewhite;
+            width: 80%;
+            margin: 10px auto;
+        }
+        .khoi{
+            width: 100%;
+        }
+        input{
+            width: 100%;
+            padding: 5px 0;
+            border-radius: 5px;
+        }
+        .quen-mat-khau{
+            display: flex;
+            
+        }
+
+    </style>
+</head>
+<body> 
+   <!-- Danh mục -->
+    <nav class="danh-muc">
+        <ul class="danh-sach-muc">
+            <li class="muc"><a href="#" class="lien-ket">Thực tập, đồ án</a></li>
+            <li class="muc"><a href="#" class="lien-ket">Thủ tục 1 cửa</a></li>
+            <li class="muc"><a href="#" class="lien-ket">Một cửa oline</a></li>
+            <li class="muc"><a href="#" class="lien-ket">Email HUMG</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="Trai">
+            <div class="khoi-dang-nhap">
+                <form action="">
+                    <div class="khoi">
+                        <p>Tài khoản</p>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="khoi-thong-tin">
+                        <p>Mật khẩu</p>
+                        <input type="password" name="" id="">
+                    </div>
+                    <div class="quen-mat-khau">
+                        <a class="quen-mat-khau-lien-ket" href="#">Quên mật khẩu?</a>
+                    </div>
+                    <div class="khoi- thong-tin">
+                        <button>Đăng nhập</button>
+                        <button>Đăng nhập với microsoft office 365</button>
+                    </div>
+                </form>
+            </div>
+         </div>
+        <div class="Phai">Phải</div>
+    </main>
+</body>
+</html>
