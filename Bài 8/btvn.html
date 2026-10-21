@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-2</title>
+  </head>
+
+  <body>
+    <div>Nhập điểm A: <input id="diemA" type="number" /></div>
+    <div>Nhập điểm B: <input id="diemB" type="number" /></div>
+    <div>Nhập điểm C: <input id="diemC" type="number" /></div>
+    <div>
+      <button onclick="tinhDiem()">Tính điểm</button>
+    </div>
+    <div>Kết quả <input id="ketQua" type="text" /></div>
+    <div>Nhập năm sinh: <input id="namsinh" type="number" /></div>
+    <div>
+      <button onclick="tinhtuoi()">Tính tuổi</button>
+    </div>
+    <div>Số tuổi<input id="sotuoi" type="so" /></div>
+    <script>
+      function tinhtuoi() {
+        var x = parseFloat(document.getElementById("namsinh").value);
+
+        document.getElementById("sotuoi").value = tinhtuoi(x);
+      }
+      function tinhtuoi() {
+        var tuoi = namnay - namsinh;
+        var tuoihientai = "";
+        return "Tuổi: " + tuoihientai;
+      }
+      function tinhDiem() {
+        var a = parseFloat(document.getElementById("diemA").value);
+        var b = parseFloat(document.getElementById("diemB").value);
+        var c = parseFloat(document.getElementById("diemC").value);
+
+        document.getElementById("ketQua").value = tinhDiemChu(a, b, c);
+      }
+
+      //   document.write("Điểm A nhập vào là: " + a);
+      //   document.write("<br>Điểm B nhập vào là: " + b);
+      //   document.write("<br>Điểm C nhập vào là: " + c);
+
+      function tinhDiemChu(a, b, c) {
+        var tong = a * 0.6 + b * 0.3 + c * 0.1;
+        var kq = "";
+        if (tong >= 0 && tong < 4) {
+          kq = "F";
+        } else if (tong >= 4 && tong < 5) {
+          kq = "D";
+        } else if (tong >= 5 && tong < 7) {
+          kq = "C";
+        } else if (tong >= 7 && tong < 9) {
+          kq = "B";
+        } else if (tong >= 9 && tong < 10) {
+          kq = "A";
+        }
+
+        return " → Điểm chữ: " + kq;
+      }
+    </script>
+  </body>
+</html>

@@ -6,7 +6,16 @@
     <title>JS - 2</title>
   </head>
   <body>
+    <div>Nhập điểm A: <input id="diemA" type="number" /></div>
+    <div>Nhập điểm B: <input id="diemB" type="number" /></div>
+    <div>Nhập điểm C: <input id="diemC" type="number" /></div>
+    <div>
+      <button onclick="tinhDiemChu()">Tính điểm</button>
+    </div>
     <script>
+      var a = document.getElementById("diemA").value;
+      var b = document.getElementById("diemB").value;
+      var c = document.getElementById("diemC").value;
       // function
 
       // không tham số
@@ -34,6 +43,15 @@
       var sothunhat = prompt("Nhập số thứ 1", "");
       var sothuhai = prompt("Nhạp số thứ 2", "");
       tinhtong;
+
+      //chuyển chuỗi thành số
+      parselnt("42");
+      parseFloat(42.33);
+
+      function tinhDiemChu(a, b, c) {
+        var tong = a * 0.6 + b * 0.3 + c * 0.1;
+        var kq = "";
+      }
     </script>
   </body>
 </html>
