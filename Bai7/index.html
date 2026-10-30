@@ -186,13 +186,78 @@
       }
 
       // kiểm tra số chẵn lẻ
-      var so = 5;
-      // về timh hiểu sao khi var so=200000000001 thì lẠI HIỆN RA kết quả là số chẵn
-      if (so % 2 == 0) {
+      var so = 200000000000000001;
+      var doDai = so.length;
+      var socuoicung = so[doDai - 1];
+
+      if (socuoicung % 2 == 0) {
         document.writeln(so + "là số chẵn");
       } else {
         document.writeln(so + "là số lẻ");
       }
+
+      // swich case
+      var d = new Date();
+      var theDay = d.getDay();
+      switch (theDay) {
+        case 5:
+          document.writeln("Finally friday");
+          break;
+        case 6:
+          document.writeln("Super saturday");
+          break;
+        case 0:
+          document.writeln("sleeply sunday");
+          break;
+        default:
+          document.writeln("I'm looking forward to this weekend");
+      }
+
+      for (var index = 1; index <= 1000; index++) {
+        document.writeln("<br>");
+        document.writeln("xin lỗi lần thứ" + index);
+      }
+
+      // mang
+      for (var i = 0; i < mang.length; i++) {
+        document.writeln("<br>");
+        document.writeln(mang[i]);
+      }
+
+      for (var i = 0; i < mang.length; i++) {
+        if (isNaN(mang[i]) == true) {
+          document.writeln("<br>");
+          document.writeln("Xin chào" + mang[i]);
+        }
+      }
+
+      // while
+      i = 0;
+      while (i <= 10) {
+        document.writeln("The number is" + i);
+        document.writeln("<br />");
+        i = i + 1;
+      }
+      // do while
+      j = 0;
+      do {
+        document.writeln("The number is" + j);
+        document.writeln("<br />");
+        j = j + 1;
+      } while (j <= 10);
+
+      // popup boxes
+      // alert("Hello");
+
+      // var r = comfirm("press a button");
+      // if (r == true) {
+      //   document.writeln("You pressed OK!");
+      // } else {
+      //   document.writeln("You pressed Cancel!");
+      // }
+
+      var r = prompt("nhập vào họ tên", "nhập tên ở đây");
+      document.writeln(r);
     </script>
     <!-- External Javascript -->
     <script src="script.js"></script>

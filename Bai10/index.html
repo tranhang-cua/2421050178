@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ví dụ đổi vid</title>
+    <style>
+      .video {
+        width: 50%;
+        height: 500px;
+        margin: auto;
+        /* background-color: aqua; */
+      }
+      .danh-sach {
+        width: 80%;
+        display: flex;
+        margin: 50px auto;
+        justify-content: space-between;
+      }
+      .anh {
+        width: 24%;
+        height: 100px;
+        background-color: aqua;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- màn xem -->
+    <div class="video">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/TMNw3X6goQU?si=jRtU9CfDkFlfctAy"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <h3 class="ten">Bài hát đang phát</h3>
+    </div>
+    <div class="danh-sach">
+      <div class="anh" onclick="chonVid(1)">
+        <img class="anh" src="../anh/images (16).jpg" alt="" />
+        <p>Không buông</p>
+      </div>
+      <div class="anh"  onclick="chonVid(2)">
+        <img class="anh" src="../anh/images (18).jpg" alt="" />
+        <p>Tên bài hát</p>
+      </div>
+      <div class="anh"  onclick="chonVid(3)">
+        <img class="anh" src="../anh/images (17).jpg" alt="" />
+        <p>Tên bài hát</p>
+      </div>
+      <div class="anh" onclick="chonVid(4)"></div>
+        <img class="anh" src="../anh/images (22).jpg" alt="" />
+        <p>Tên bài hát</p>
+      </div>
+    </div>
+    <script>
+      var danhsachvid = [
+          {
+              id: 1,
+              ten: "Không buông"
+              duongDanAnh: "../anh/images (16).jpg",
+              duongDanYoutube:<iframe width="560" height="315" src="https://www.youtube.com/embed/9UcQ7ddVjoc?si=G6Ok6YHu6H9IMPUP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          },
+           {
+              id: 2,
+              ten: 123
+              duongDanAnh: "../anh/images (16).jpg",
+              duongDanYoutube:<iframe width="560" height="315" src="https://www.youtube.com/embed/9UcQ7ddVjoc?si=G6Ok6YHu6H9IMPUP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          },
+           {
+              id: 3,
+              ten: Không buông
+              duongDanAnh: "../anh/images (17).jpg",
+              duongDanYoutube:<iframe width="560" height="315" src="https://www.youtube.com/embed/9UcQ7ddVjoc?si=G6Ok6YHu6H9IMPUP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          },
+           {
+              id: 4,
+              ten: Không buông
+              duongDanAnh: "../anh/images (22).jpg",
+              duongDanYoutube:<iframe width="560" height="315" src="https://www.youtube.com/embed/9UcQ7ddVjoc?si=G6Ok6YHu6H9IMPUP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          },
+      ];
+
+      function chonVid(id){
+        for (let i = 0; i < danhsachvid,length; i++) {
+            if(danhsachvid[i].id == id){
+                document.getElementByClassName(.ten);
+            }
+        }
+      }
+    </script>
+  </body>
+</html>
