@@ -45,3 +45,4 @@ the_loai_id int,
 id key AUTO_INCREMENT int,
 phim_id int,
 dao_dien_id int,
+
