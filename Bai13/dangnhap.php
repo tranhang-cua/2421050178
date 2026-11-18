@@ -43,19 +43,25 @@
         </form>
     </div>
     <?php
-    if(isset($_POST['tenDangNhap']) && isset($_POST['matKhau']) ){
-        $tenDangNhap = $_POST['tenDangNhap'];
-        $matKhau = $_POST['matKhau'];
+        // sử dụng include để kết nối 2 file php
+        include 'connect.php';
+        session_start();
+        if(isset($_POST['tenDangNhap']) && isset($_POST['matKhau']) ){
+             $tenDangNhap = $_POST['tenDangNhap'];
+            $matKhau = $_POST['matKhau'];
+
+            $sql = "SELECT * from nguoi_dung where ten_dang_nhap = '$tenDangNhap' and mat_khau = '$matKhau'";
+
+            $result = mysqli_query($conn,$sql);
         
-        if($tenDangNhap == "admin" && $matKhau == "123") {
-            session_start();
-            $_SESSION['dangnhap'] = "thanhcong";
-            header("Location: trangchu.php");
-        }
-        else{
+            if(mysqli_num_rows($result) > 0){
+                $_SESSION['dangnhap'] = "thanhcong";
+                header("Location: index.php");
+            }
+            else{
             echo "Tên đăng nhập hoặc mật khẩu không chính xác";
+            }
         }
-    }
     ?>
 </body>
 </html>
