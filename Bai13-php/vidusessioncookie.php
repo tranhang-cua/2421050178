@@ -1,10 +1,12 @@
 <?php
-    //session
-    session_start();
-    $_SESSION["Name"] = "user";
+    //1.Session
+    session_start(); //Bắt đầu Session
+    $_SESSION['Name'] = "Đình Huy";
 
-    echo "session name: " . $_SESSION['Name'] . "<br>";
+    echo "Session Name: " . $_SESSION['Name'] . "<br>";
 
+
+    //2. Cookie
     // cookieName: Tên cookie	Tên định danh của cookie (ví dụ: "user", "theme").  
     // sẽ dùng tên này để gọi lại cookie bằng lệnh $_COOKIE[$cookieName].
     // $cookieValue: Giá trị cookie	Nội dung dữ liệu  muốn lưu trữ (ví dụ: "JohnDoe", "dark_mode").
@@ -16,12 +18,13 @@
     // Dấu gạch chéo / nghĩa là cookie này sẽ có tác dụng trên toàn bộ trang web (tất cả các thư mục và trang con).
 
     $cookieName = "user";
-    $cookieValue = "hang";
+    $cookieValue = "Huy";
 
     setcookie($cookieName, $cookieValue, time() + 86400, "/");
-    if(isset($_COOKIE[$cookieName])) {
-        echo "cookie đã tồn tại";
-    } else{
-        echo "cookie chưa được thiết lập";
+    if(isset($_COOKIE[$cookieName])){
+        echo "Cookie đã tồn tại";
+    }else {
+        echo "Cookie chưa được thiết lập!";
     }
+
 ?>

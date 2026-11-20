@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Thêm tài khoản</h1>
-    <from action="" method=
+    <h1>Danh mục</h1>
+    Đây là trang danh mục
 </body>
 </html>

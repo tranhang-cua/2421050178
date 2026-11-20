@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Trang chủ</h1>
+    <h1>Phim</h1>
+    Đây là trang phim
 </body>
 </html>

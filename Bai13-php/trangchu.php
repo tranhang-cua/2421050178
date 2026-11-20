@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Danh mục</h1>
+    <h1>Trang chủ</h1>
+    Đây là trang chủ
 </body>
 </html>
