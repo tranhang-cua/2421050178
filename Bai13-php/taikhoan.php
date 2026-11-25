@@ -56,8 +56,8 @@
         <td><?php echo $row['so_dien_thoai']?></td>
         <td><?php echo $row['gioi_tinh']?></td>
         <td>
-            <a class="capnhat" href="index.php?page-layuot=capnhat&id=<?php echo $row['id']?>">Cập nhật</a>
-            <a class="xoa" href="#">Xóa</a>
+            <a class="capnhat" href="index.php?page_layuot=capnhat&id=<?php echo $row['id']?>">Cập nhật</a>
+            <a class="xoa" href="index.php?page_layuot=xoataikhoan&id=<?php echo $row['id']?>">Xóa</a>
         </td>
     </tr>
 
